@@ -1,0 +1,36 @@
+/* ********** */
+/* Universals */
+/* ********** */
+
+* 
+{
+    /* Color Variables */
+    --bg: navy;
+    --fg: orange;
+
+    /* Sizing */
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    /* Font Settings */
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* ************** */
+/* Navigation Bar */
+/* ************** */
+
+#navbar
+{
+    background-color: var(--bg);
+}
+
+.navbar-item p
+{
+    color: var(--fg);
+}
