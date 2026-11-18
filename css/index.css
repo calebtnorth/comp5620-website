@@ -5,8 +5,11 @@
 * 
 {
     /* Color Variables */
-    --bg: navy;
-    --fg: orange;
+    --bg: #0b2341;
+    --fg: #e86100;
+
+    /* Timing Variables */
+    --hover-ms: 100ms;
 
     /* Sizing */
     margin: 0;
@@ -24,13 +27,92 @@
 /* ************** */
 /* Navigation Bar */
 /* ************** */
-
 #navbar
 {
+    /* Size and Position */
+    width: 100vw;
+    height: 10vh;
+
+    position: sticky;
+    top: 0;
+
+    /* Display */
+    display: flex;
+
+    /* Children */
+    justify-content: space-between;
+
+    /* Decoration */
     background-color: var(--bg);
 }
 
+#navbar-items
+{
+    /* Size and Position */
+    width: 75%;
+    height: 100%;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+
+    /* Children */
+    align-items: center;
+    justify-content: right;
+}
+
+.navbar-logo
+{
+    /* Size and Position */
+    height: 100%;
+    width: 10vw;
+
+    /* Display */
+    display: flex;
+
+    /* Children */
+    align-items: center;
+    justify-content: center;
+}
+.navbar-logo img 
+{
+    height: 60%;
+}
+
+.navbar-item
+{
+    /* Size and Position */
+    box-sizing: content-box;
+    height: 100%;
+    
+    /* Display */
+    display: flex;
+    padding: 0px 2.5vw;
+
+    /* Children */
+    align-items: center;
+    justify-content: center;
+
+    /* Decoration */
+    background-color: var(--bg);
+
+    border-style: solid;
+    border-color: var(--fg);
+    border-width: 0px 0px;
+
+    /* Animation */
+    transition:
+        border-width var(--hover-ms) linear,
+        background-color var(--hover-ms) linear
+    ;
+}
+.navbar-item:hover
+{
+    background-color: white;
+    border-width: 5px 0px;
+}
 .navbar-item p
 {
     color: var(--fg);
 }
+
