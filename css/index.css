@@ -216,3 +216,29 @@ html
     font-size: 14px;
     font-style: italic;
 }
+
+#contact-body
+{
+    /* Size and Position */
+    padding-top: 5%;
+
+    /* Children */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+.contact-detail
+{
+    /* Children */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.contact-detail img
+{
+    /* Size and Position */
+    height: 16px;
+    padding-right: 1%;
+}
