@@ -8,6 +8,10 @@
     --bg: #0b2341;
     --fg: #e86100;
 
+    /* Spacing */
+    --page-vspacing: 2.5vh;
+    --page-hspacing: 2.5vw;
+
     /* Decoration Variables */
     --smoothing: 7.5px;
 
@@ -76,7 +80,7 @@ body
 #header-logo img 
 {
     height: calc(100% * (2/3));
-    margin-left: 5vw;
+    margin-left: var(--page-hspacing);
 }
 
 #header-user
@@ -85,7 +89,7 @@ body
 
     /* Size and Position */
     width: fit-content;
-    margin: 0 5vw;
+    margin: 0 var(--page-hspacing);
 
     /* Display */
     display: flex;
@@ -127,7 +131,7 @@ body
 #navbar-header
 {
     /* Display */
-    padding: 2.5vh 5vw;
+    padding: 2.5vh var(--page-hspacing);
 }
 #navbar-name p
 {
@@ -148,7 +152,7 @@ body
     flex-direction: row;
 
     /* Children */
-    align-items: center;
+    align-items: left;
     justify-content: space-evenly;
 
     /* Decoration */
@@ -209,7 +213,7 @@ body
     display: flex;
     flex-direction: row;
 
-    padding: 7.5%;
+    padding: var(--page-vspacing) var(--page-hspacing);
 
     /* Children */
     align-items: top;
@@ -221,7 +225,7 @@ body
     /* Size and Position */
     aspect-ratio: 1;
     height: 45vh;
-    margin-right: 5vw;
+    margin-right: calc(var(--page-hspacing) / 2);
 }
 #abstract-img img
 {
@@ -331,7 +335,7 @@ body
     display: flex;
     flex-direction: column;
 
-    padding: 0 7.5% 7.5% 7.5%;
+    padding: var(--page-hspacing) var(--page-vspacing);
 
     /* Children */
     align-items: left;
