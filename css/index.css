@@ -51,6 +51,9 @@ body
     display: flex;
     flex-direction: row;
 
+    /* Children */
+    justify-content: space-between;
+
     /* Decoration */
     background-color: white;
 }
@@ -70,7 +73,37 @@ body
 #header-logo img 
 {
     height: calc(100% * (2/3));
-    padding-left: 2.5vw;
+    margin-left: 5vw;
+}
+
+#header-user
+{
+    cursor: not-allowed;
+
+    /* Size and Position */
+    width: fit-content;
+    margin: 0 5vw;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+
+    /* Children */
+    align-items: center;
+    justify-content: right;
+}
+#header-user p
+{
+    white-space: normal;
+}
+#header-user img
+{
+    /* Size and Position */
+    height: 50%;
+    margin-left: 2vw;
+
+    /* Decoration */
+    border-radius: 50%;
 }
 
 
@@ -91,7 +124,7 @@ body
 #navbar-header
 {
     /* Display */
-    padding: 1.5vh 2.5vw;
+    padding: 2.5vh 5vw;
 }
 #navbar-name p
 {
