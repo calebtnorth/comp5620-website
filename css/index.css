@@ -198,7 +198,8 @@ body
 {
     /* Size and Position */
     box-sizing: border-box;
-    width: 100%;
+
+    width: 100vw;
     height: min-content;
 
     /* Display */
@@ -212,6 +213,29 @@ body
     justify-content: space-around;
 }
 
+#abstract-img
+{
+    /* Size and Position */
+    aspect-ratio: 1;
+    height: 45vh;
+    margin-right: 5vw;
+}
+#abstract-img img
+{
+    /* Size and Position */
+    width: 100%;
+    height: 100%;
+
+    /* Display */
+    display: block;
+    overflow: hidden !important;
+
+    object-fit:cover;
+    object-position: center top;
+
+    /* Decoration */
+    border-radius: 7.5%;
+}
 
 #abstract-header
 {
