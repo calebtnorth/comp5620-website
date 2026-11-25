@@ -8,6 +8,9 @@
     --bg: #0b2341;
     --fg: #e86100;
 
+    /* Decoration Variables */
+    --smoothing: 7.5px;
+
     /* Timing Variables */
     --hover-ms: 100ms;
 
@@ -103,7 +106,7 @@ body
     margin-left: 2vw;
 
     /* Decoration */
-    border-radius: 50%;
+    border-radius: var(--smoothing);
 }
 
 
@@ -234,7 +237,7 @@ body
     object-position: center top;
 
     /* Decoration */
-    border-radius: 7.5%;
+    border-radius: var(--smoothing);
 }
 
 #abstract-header
@@ -360,6 +363,7 @@ body
     border-style: solid;
     border-color: transparent;
     border-width: 2px;
+    border-radius: var(--smoothing);
 
     color: black;
 
