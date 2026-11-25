@@ -27,6 +27,10 @@ html
 {
     overflow-x: hidden;
 }
+body
+{
+    width: 100vw;
+}
 
 
 /* ****** */
@@ -135,6 +139,7 @@ html
     justify-content: center;
 
     /* Decoration */
+    text-decoration: none;
     background-color: var(--bg);
 
     /* Animation */
@@ -160,9 +165,8 @@ html
 {
     /* Size and Position */
     box-sizing: border-box;
-
     width: 100%;
-    height: 75vh;
+    height: min-content;
 
     /* Display */
     display: flex;
@@ -222,17 +226,21 @@ html
     /* Size and Position */
     padding-top: 5%;
 
-    /* Children */
+    /* Display */
     display: flex;
     flex-direction: column;
+
+    /* Children */
     align-items: left;
     justify-content: flex-start;
 }
 .contact-detail
 {
-    /* Children */
+    /* Display */
     display: flex;
     flex-direction: row;
+
+    /* Children */
     align-items: center;
     justify-content: left;
 }
@@ -241,4 +249,82 @@ html
     /* Size and Position */
     height: 16px;
     padding-right: 1%;
+}
+.contact-detail a
+{
+    text-decoration: underline black;
+    color: black;
+}
+
+/* **** */
+/* News */
+/* **** */
+
+#news-body
+{
+    /* Size and Position */
+    box-sizing: border-box;
+    width: 100%;
+    height: min-content;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 7.5% 7.5% 7.5%;
+
+    /* Children */
+    align-items: left;
+    justify-content: flex-start;
+}
+
+#news-title
+{
+    /* Size and Position */
+    margin-left: 1.5%;
+
+    /* Decoration */
+    color: var(--fg);
+
+    /* Font Settings */
+    font-size: 24px;
+}
+
+.news-entry
+{
+    /* Size and Position */
+    box-sizing: border-box;
+    margin: 0.5% 0;
+
+    /* Display */
+    padding: 1.5%;
+
+    /* Decoration */
+    border-style: solid;
+    border-color: transparent;
+    border-width: 2px;
+
+    color: black;
+
+    /* Font Settings */
+    text-decoration: none;
+    font-size: 14px;
+
+    /* Animation */
+    transition:
+        border-color var(--hover-ms) linear
+    ;
+}
+.news-entry:hover
+{
+    border-color: var(--fg);
+}
+.news-title p
+{
+    font-weight: 600 !important;
+}
+.news-desc p
+{
+    text-align: justify;
+    text-justify: distribute;
 }
