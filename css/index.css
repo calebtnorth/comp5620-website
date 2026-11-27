@@ -12,6 +12,8 @@
     --page-vspacing: 2.5vh;
     --page-hspacing: 2.5vw;
 
+    --page-focus-width: 60%;
+
     /* Decoration Variables */
     --smoothing: 7.5px;
 
@@ -36,7 +38,16 @@ html
 }
 body
 {
+    /* Size and Position */
     width: 100vw;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+
+    /* Children */
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -120,6 +131,9 @@ body
 /* ************** */
 #navbar
 {
+    /* Size and Position */
+    width: 100vw;
+
     /* Display */
     display: flex;
     flex-direction: column;
@@ -206,14 +220,16 @@ body
     /* Size and Position */
     box-sizing: border-box;
 
-    width: 100vw;
+    width: max-content;
+    max-width: var(--page-focus-width);
+
     height: min-content;
 
     /* Display */
     display: flex;
     flex-direction: row;
 
-    padding: var(--page-vspacing) var(--page-hspacing);
+    padding: var(--page-hspacing) var(--page-vspacing);
 
     /* Children */
     align-items: top;
@@ -328,7 +344,10 @@ body
 {
     /* Size and Position */
     box-sizing: border-box;
-    width: 100%;
+
+    width: max-content;
+    max-width: var(--page-focus-width);
+
     height: min-content;
 
     /* Display */
@@ -338,7 +357,7 @@ body
     padding: var(--page-hspacing) var(--page-vspacing);
 
     /* Children */
-    align-items: left;
+    align-items: center;
     justify-content: flex-start;
 }
 
@@ -355,10 +374,10 @@ body
 {
     /* Size and Position */
     box-sizing: border-box;
-    margin: 0.5% 0;
+    margin: calc(var(--page-vspacing) / 2) 0px;
 
     /* Display */
-    padding: calc(var(--page-hspacing) / 2) 0px;
+    padding: calc(var(--page-vspacing) / 2) calc(var(--page-hspacing));
 
     /* Decoration */
     border-style: solid;
