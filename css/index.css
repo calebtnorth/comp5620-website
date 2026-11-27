@@ -217,7 +217,7 @@ body
 
     /* Children */
     align-items: top;
-    justify-content: space-around;
+    justify-content: left;
 }
 
 #abstract-img
@@ -225,7 +225,7 @@ body
     /* Size and Position */
     aspect-ratio: 1;
     height: 45vh;
-    margin-right: calc(var(--page-hspacing) / 2);
+    margin-right: var(--page-hspacing);
 }
 #abstract-img img
 {
@@ -344,9 +344,6 @@ body
 
 #news-title
 {
-    /* Size and Position */
-    margin-left: 1.5%;
-
     /* Decoration */
     color: var(--fg);
 
@@ -361,7 +358,7 @@ body
     margin: 0.5% 0;
 
     /* Display */
-    padding: 1.5%;
+    padding: calc(var(--page-hspacing) / 2) 0px;
 
     /* Decoration */
     border-style: solid;
