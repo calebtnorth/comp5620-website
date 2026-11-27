@@ -1,0 +1,130 @@
+/* ******* */
+/* Courses */
+/* ******* */
+
+#courses-body
+{
+    /* Size and Position */
+    box-sizing: border-box;
+    width: calc(var(--page-focus-width) * (4/3));
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+
+    padding: var(--page-vspacing) var(--page-hspacing);
+
+    /* Children */
+    justify-content: space-between;
+    align-items: top;
+
+    /* Decoration */
+    background-color: white;
+}
+
+#courses-list
+{
+    /* Size and Position */
+    width: max-content;
+    max-width: var(--page-focus-width);
+
+    height: min-content;
+
+    /* Decoration */
+}
+
+#courses-title
+{
+    /* Decoration */
+    color: var(--fg);
+
+    /* Font Settings */
+    font-size: 24px;
+}
+
+.courses-entry
+{
+    /* Size and Position */
+    margin-top: var(--page-vspacing);
+
+    /* Display */
+    padding: var(--page-vspacing);
+
+    /* Decoration */
+    border-style: solid;
+    border-width: 2px;
+    border-radius: var(--smoothing);
+}
+
+.courses-entry-title
+{
+    /* Size and Position */
+    margin-bottom: calc(var(--page-vspacing) / 2);
+
+    /* Display */
+    padding-bottom: calc(var(--page-vspacing) / 2);
+
+    /* Decoration */
+    color: var(--fg);
+    border-bottom: solid 2px var(--bg);
+
+    /* Font Settings */
+    font-weight: 600;
+}
+
+
+/* ************ */
+/* Office Hours */
+/* ************ */
+#office-hours
+{
+    /* Size and Position */
+    box-sizing: border-box;
+    height: min-content;
+    width: 100%;
+    
+    position: sticky;
+    top: 10vh;
+
+    margin: calc(var(--page-vspacing) / 2) calc(var(--page-hspacing) / 2);
+
+    /* Display */
+    padding: var(--page-vspacing) var(--page-hspacing);
+
+    /* Decoration */
+    color: var(--bg);
+
+    border-style: solid;
+    border-color: var(--bg);
+    border-width: 2px;
+    border-radius: var(--smoothing)
+}
+
+.office-hours-entry
+{
+    color: black;
+}
+
+#office-hours .day
+{
+    /* Size and Position */
+    width: 12px;
+
+    /* Font Settings */
+    font-weight: 600;
+
+    /* Decoration */
+    color: var(--bg);
+    
+    /* Display */
+    display: inline-block;
+}
+
+#office-hours-title
+{
+    /* Decoration */
+    color: var(--fg);
+
+    /* Font Settings */
+    font-weight: 600;
+}
